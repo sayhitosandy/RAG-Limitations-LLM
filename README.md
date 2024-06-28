@@ -1,56 +1,18 @@
 # RAG-Limitations-LLM
 #### Spring 2024, CSE 256: Statistical Natural Language Processing, UC San Diego
 
-Working with Large Language Models (LLMs) presents
-several challenges, including gaps in domain knowledge,
-issues with factual accuracy, and the problem of
-hallucination. Retrieval Augmented Generation (RAG)
-offers a solution to alleviate some of these challenges
-by enhancing LLMs with external knowledge sources
-such as databases.
-When the user asks the LLM-based chatbot a
-question, documents related to that user’s question
-are retrieved from a database and prepended to the
-user’s query as additional context, allowing the LLM to
-consider that context in generating its response. Clearly,
-this approach has several advantages over the standard
-(without RAG) approach:
-1. Additional context ‘guardrails’ the LLM and
-reduces the chances of hallucinations.
-2. The retrieved information is especially beneficial
-in domain-specific applications where it allows the
-LLM to generate more refined, accurate, and upto-
-date results.
-3. The database can be modified and updated without
-the need to retrain the LLM.
+Working with Large Language Models (LLMs) presents several challenges, including gaps in domain knowledge, issues with factual accuracy, and the problem of hallucination. Retrieval Augmented Generation (RAG) offers a solution to alleviate some of these challenges by enhancing LLMs with external knowledge sources such as databases. When the user asks the LLM-based chatbot a question, documents related to that user’s question are retrieved from a database and prepended to the user’s query as additional context, allowing the LLM to consider that context in generating its response. Clearly, this approach has several advantages over the standard (without RAG) approach:
+1. Additional context ‘guardrails’ the LLM and reduces the chances of hallucinations.
+2. The retrieved information is especially beneficial in domain-specific applications where it allows the
+LLM to generate more refined, accurate, and upto-date results.
+3. The database can be modified and updated without the need to retrain the LLM.
 
-In this project, perform a detailed analysis to understand
-the limitations of the existing system, and identify and provide concrete
-examples of failure cases. These include managing
-unrelated noise from external sources, handling
-mathematical reasoning, effectively integrating
-information, interpreting negative or missing
-statements, dealing with conflicting knowledge,
-and the difficulty of evaluating these systems. These challenges often result in irrelevant,
-inaccurate, or incoherent responses.
+In this project, perform a detailed analysis to understand the limitations of the existing RAG systems, and identify and provide concrete examples of failure cases. These include managing unrelated noise from external sources, handling mathematical reasoning, effectively integrating information, interpreting negative or missing statements, dealing with conflicting knowledge, and the difficulty of evaluating these systems. These challenges often result in irrelevant, inaccurate, or incoherent responses.
 
-To address these limitations, researchers are
-exploring several avenues. Enhanced context
-management techniques and architectures, such
-as Mamba SSM, aim to help models better understand
-full conversation histories. Noise reduction methods,
-like Graph RAG, seek to filter out irrelevant details
-by leveraging structured entity information. New
-evaluation metrics are being developed to more
-accurately assess the relevance, diversity, and factual
-accuracy of responses. Additionally, incorporating
-symbolic reasoning capabilities could enable RAG
-models to handle mathematical problems more
-effectively.
+To address these limitations, researchers are exploring several avenues. Enhanced context management techniques and architectures, such as Mamba SSM, aim to help models better understand full conversation histories. Noise reduction methods, like Graph RAG, seek to filter out irrelevant details by leveraging structured entity information. New evaluation metrics are being developed to more accurately assess the relevance, diversity, and factual accuracy of responses. Additionally, incorporating symbolic reasoning capabilities could enable RAG models to handle mathematical problems more effectively.
 
 ## Links
 [Report](Project_Report.pdf)
-
 
 ## References
 1. Ahn, J., Verma, R., Lou, R., Liu, D., Zhang, R., and Yin, W. (2024). Large language models for mathematical reasoning: Progresses and challenges.
